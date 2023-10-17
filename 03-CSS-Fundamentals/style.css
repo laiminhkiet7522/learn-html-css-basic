@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* PAGE SECTIONS */
 body {
   font-family: sans-serif;
   color: #444;
@@ -21,7 +23,7 @@ article {
   background-color: #f7f7f7;
   padding: 20px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 .post-header {
   margin-bottom: 40px;
@@ -33,6 +35,8 @@ aside {
   padding: 50px 0;
   width: 500px;
 }
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
@@ -61,6 +65,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
+  /* display: inline; */
 }
 ul,
 ol {
@@ -70,6 +75,7 @@ ol {
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 li:last-child {
   margin-bottom: 0;
@@ -134,11 +140,23 @@ a:active {
   background-color: black;
   font-style: italic;
 }
-.post-img{
+.post-img {
   width: 100%;
   height: auto;
 }
 
+nav a:link {
+  /* background-color: orange;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
 /* Resolving conflicts */
 /* #copyright {
   color: red;
