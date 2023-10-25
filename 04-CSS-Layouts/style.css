@@ -15,7 +15,7 @@ nav {
   font-size: 18px;
 }
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .container {
   width: 1200px;
@@ -25,7 +25,7 @@ article {
 .main-header {
   background-color: #f7f7f7;
   padding: 20px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 .post-header {
@@ -302,7 +302,8 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* FLEXBOX LAYOUTS */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -316,5 +317,29 @@ article {
 
 aside {
   flex: 0 0 360px;
-  /* align-self: flex-start; */
+  align-self: flex-start;
+} */
+
+/* CSS GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+article {
+}
+
+aside {
+  
+}
+
+footer{
+  grid-column: 1/-1;
 }
